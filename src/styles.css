@@ -1,0 +1,40 @@
+.App {
+  display: grid;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  flex-wrap: wrap;
+
+  font-family: sans-serif;
+  text-align: center;
+}
+
+th {
+  text-decoration: underline;
+}
+
+td,
+th {
+  color: blue;
+}
+
+.Button {
+  font-size: 1em;
+  color: #dcdcdc;
+  display: inline-flex;
+  align-items: center;
+  min-height: 45px;
+  border-radius: 5px;
+  margin: 10px 20px;
+  background-color: lime;
+  margin-left: 40%;
+  margin-right: 40%;
+  border: 1px solid #b5b5bb;
+  &:focus {
+    border: 1px solid white;
+    outline: 0;
+  }
+  &[aria-pressed="true"] {
+    background-color: #e4e4e4;
+    color: #137a5a;
+  }
+}
